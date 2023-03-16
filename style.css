@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: #8a6cff;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 450px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.wrapper .gradient_box {
+    width: 100%;
+    border-radius: 7px;
+    height: 220px;
+    background: linear-gradient(to left top, #977dfe, #6878ff);
+}
+
+.wrapper .row {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.options p {
+    font-size: 1.12rem;
+    margin-bottom: 8px;
+}
+
+.options .select_box {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.select_box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.12rem;
+    background: none;
+}
+
+.colors input {
+    height: 41px;
+}
+
+.options .colors {
+    margin-left: 60px;
+}
+
+.row :where(.column, button) {
+    width: calc(100% / 2 - 12px);
+}
+
+.colors input {
+    height: 41px;
+    width: calc(100% / 2 - 20px);
+}
+
+.colors input:last-child {
+    margin-left: 6px;
+}
+
+.wrapper textarea {
+    width: 100%;
+    padding: 10px 15px;
+    color: #333;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.05rem;
+    border: 1px solid #ccc;
+}
+
+.buttons button {
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 0;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 0px -15px;
+}
+
+.buttons .refresh {
+    background: #6c757d;
+}
+
+.buttons .copy {
+    background: #8a6cff;
+}
